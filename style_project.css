@@ -10,26 +10,6 @@ body {
 	color: #333;
 }
 
-#player-container {
-	width: 100%;
-	height: 70px;
-	background-color: #ddd;
-	border-top: 1px solid #333;
-	bottom: 0px;
-	overflow: hidden;
-	position: fixed;
-	z-index: 999;
-}
-
-#controls button {
-	height: 70px;
-	width: 40px;
-	padding: 0px;
-	background-color: #ddd;
-	border: 0px;
-	font-size: 2em;
-}
-
 #nav-content .nav {
 	list-style: none;
 	padding-left: 0;
@@ -248,4 +228,48 @@ body {
 
 .musicList {
 	cursor: pointer;
+}
+
+/*---------- Player Style ----------*/
+
+/*#player-container {
+	width: 100%;
+	height: 70px;
+	background-color: #ddd;
+	border-top: 1px solid #333;
+	bottom: 0px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+}*/
+
+#controls button {
+	height: 30px;
+	width: 57px;
+	padding: 0px;
+	background-color: #ddd;
+	border: 0px;
+	font-size: 2em;
+}
+
+#playlist {
+	background: #666;
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#playlist li {
+	padding: 5px;
+}
+
+#playlist li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+}
+
+.active a {
+	background: #2E2E2E;
+	text-decoration: none;
 }
