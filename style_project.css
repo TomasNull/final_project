@@ -1,0 +1,251 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #F3F5F5;
+	font-size: 14px;
+	line-height: 1.422857143;
+	color: #333;
+}
+
+#player-container {
+	width: 100%;
+	height: 70px;
+	background-color: #ddd;
+	border-top: 1px solid #333;
+	bottom: 0px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+}
+
+#controls button {
+	height: 70px;
+	width: 40px;
+	padding: 0px;
+	background-color: #ddd;
+	border: 0px;
+	font-size: 2em;
+}
+
+#nav-content .nav {
+	list-style: none;
+	padding-left: 0;
+	float: left;
+}
+
+.sidebar {
+	width: 45px;
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	z-index: 600;
+	display: block;
+	padding: 0px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #DFE5EB;
+	border-right: 1px solid #D8D8D8;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.icon {
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
+
+#superior-container {
+	border-bottom: 1px #2E64FE solid;
+	background-color: #2E64FE;
+	color: #FFFFFF !important;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.nav-brand {
+	float: left;
+	padding: 15px;
+	font-size: 18px;
+	line-height: 20px;
+	height: 50px;
+	background-color: #2E64FE;
+	text-decoration: none;
+	font-size: 26px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.nav-header {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.nav {
+	float: left;
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+
+}
+
+.nav > li {
+	position: relative;
+	float: left;
+	display: block;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+
+.nav-content {
+	border-color: #101010;
+	display: block !important;
+	height: auto !important;
+	padding-bottom: 0;
+	overflow: visible !important;
+}
+
+#frmSearch {
+	margin: 0px;
+	margin-top: 10px;
+	float: right !important;
+}
+
+.form-group {
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+#frmSearch input {
+	background-color: #FDFDFD;
+	border: 1px #A9A9A9 solid;
+	border-radius: 0px;
+	color: #1F1F1F;
+	font-size: 1.1em;
+	width: 100%;
+}
+
+#btnSearch {
+	background-color: #ddd;
+	border-color: #060606;
+	color: #FFFFFF;
+}
+
+/*---------- Vertical line ----------*/
+.vertical {
+	width: 0px;
+	height: 36px;
+	float: left;
+	color: #FFFFFF;
+}
+
+
+/*---------- Main Content Style ----------*/
+@media (min-width: 1200px) .col-lg-3 {
+	width: 25%;
+}
+
+@media (min-width: 1200px) .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+	float: left;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 373px;
+	height: 211px;
+}
+
+.main {
+	padding: 50px;
+	margin-left: 50px;
+	margin-top: -8px;
+	background-color: #F3F5F5;
+	padding-bottom: 100px;
+}
+
+.main .page-header {
+	margin-top: 0;
+}
+
+.page-header {
+	border-bottom: 1px #F8F8F8 solid;
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+}
+
+.page-header h1 {
+	font-weight: lighter;
+	color: #838383;
+	font-size: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 1.1;
+	margin: .67em 0;
+}
+
+.row {
+	width: 25%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.prev-group {
+	border-radius: 7px;
+	border: 0px #F3F5F5 solid;
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	height: 128px;
+	width: 313px;
+}
+
+.caption {
+	border-radius: 7px;
+	text-align: center;
+	color: #454545;
+}
+
+.caption h4 {
+	color: #2E64FE;
+	padding-bottom: 2px;
+	display: block;
+}
+
+.nameArtist {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.musicList {
+	cursor: pointer;
+}
