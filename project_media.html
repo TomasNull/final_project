@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 	<head>
@@ -7,7 +7,7 @@
 		<meta name="description" content="The HTML5 Herald">
 		<meta name="author" content="SitePoint">
 		<link rel="stylesheet" type="text/css" href="style_project.css">
-		<script type="text/javascript" src="#" language="javascript"></script>
+		<!--<script type="text/javascript" src="functions_buttons.js" language="javascript"></script>-->
 		<script type="text/javascript" src="#" language="javascript"></script>
 	</head>
 
@@ -75,8 +75,8 @@
 										<button class="btn" id="forward" value="Forward"><img src="icons/next-song.ico" height="30px" width="30px"></button>
 										<button class="btn" id="mute" value="Mute"><img src="icons/mute.png" height="30px" width="30px"></button>
 									</div> <!-- end div controls -->
-									<audio id="player" class="audio-class" preload="auto" controls="" type="audio" tabindex="0">
-										<source type="audio/mp3" src="audio/satsuki_humps.mp3">
+									<audio id="player" class="audio-class" preload="auto" controls="controls" type="audio" tabindex="0">
+										<source id="playerSource" type="audio/mp3" src="audio/satsuki_humps.mp3">
 									</audio>
 								</div>
 								<ul id="playlist">
@@ -111,6 +111,7 @@
 			</div>
 		</div>
 
+		<script type="text/javascript" src="functions_buttons.js" language="javascript"></script>
 		<!--<div id="player-container">
 			<!-- Reproductor
 			<div id="controls">
