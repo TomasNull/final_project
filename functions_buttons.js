@@ -4,9 +4,16 @@ window.addEventListener('load', listener_mute, false);
 
 var music = document.getElementById('player');
 
+function cambiarLista() {
+	
+}
+
+//listener and action for play button
 function listener_play() {
-	var boton = document.getElementById('play');
-	boton.addEventListener('click', playAction);
+	var boton = document.getElementsByClassName('play');
+	for (var i=0; i<boton.length; i++) {
+		boton[i].addEventListener('click', playAction);	
+	}
 }
 
 function playAction() {
@@ -15,9 +22,12 @@ function playAction() {
 	}
 }
 
+//listener and action for pause button
 function listener_pause() {
-	var boton = document.getElementById('pause');
-	boton.addEventListener('click', pauseAction);
+	var boton = document.getElementsByClassName('pause');
+	for (var i=0; i<boton.length; i++) {
+		boton[i].addEventListener('click', pauseAction);	
+	}
 }
 
 function pauseAction(){
@@ -26,9 +36,12 @@ function pauseAction(){
 	}
 }
 
+//listener and action for mute button
 function listener_mute() {
-	var boton = document.getElementById('mute');
-	boton.addEventListener('click', muteAction);
+	var boton = document.getElementsByClassName('mute');
+	for (var i=0; i<boton.length; i++) {
+		boton[i].addEventListener('click', muteAction);	
+	}
 }
 
 function muteAction() {
@@ -38,4 +51,3 @@ function muteAction() {
     	music.muted=false;
     }
 }
-
